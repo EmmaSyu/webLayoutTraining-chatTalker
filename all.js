@@ -1,3 +1,49 @@
+// 回到頂部Top
+ $(function() {
+    var $win = $(window);
+    var $backToTop = $('.top');
+    // 当用户滚动到离顶部100像素时，展示回到顶部按钮
+    $win.scroll(function() {
+    if ($win.scrollTop() > 100) {
+        $backToTop.show();
+    } else {
+        $backToTop.hide();
+    }
+    });
+    // 当用户点击按钮时，通过动画效果返回头部
+    $backToTop.click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500);
+    });
+});
+
+
+
+
+// 常見問題 
+$(document).ready(function(){
+	$('.qa-title').click(function(e){
+	    e.preventDefault();
+	    $(this).find('p').toggleClass('qa-active');
+        $(this).siblings('p').slideToggle();
+        $(this).find('div img').toggleClass('d-none');
+	})
+})
+
+
+
+
+// 價格方案
+
+
+
+
+
+
+
+// 輪播
+
 function initSwiper() {
   /* 
   id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
@@ -34,27 +80,3 @@ function initSwiper() {
 
 /* 觸發自己定義的函式 */
 initSwiper();
-
-
-// 回到頂部Top
- $(function() {
-    var $win = $(window);
-    var $backToTop = $('.top');
-    // 当用户滚动到离顶部100像素时，展示回到顶部按钮
-    $win.scroll(function() {
-    if ($win.scrollTop() > 100) {
-        $backToTop.show();
-    } else {
-        $backToTop.hide();
-    }
-    });
-    // 当用户点击按钮时，通过动画效果返回头部
-    $backToTop.click(function() {
-    $('html, body').animate({
-        scrollTop: 0
-    }, 500);
-    });
-});
-
-
-// 常見問題 
