@@ -30,6 +30,11 @@ $(document).ready(function(){
 
         $('.qa-title').siblings('p').slideUp();
         $(this).siblings('p').slideDown();
+
+        $('.qa-title').find('.icon_minus').addClass('d-none');
+        $('.qa-title').find('.icon_plus').removeClass('d-none');
+        $(this).find('.icon_plus').addClass('d-none');
+        $(this).find('.icon_minus').removeClass('d-none');
 	})
 })
 
