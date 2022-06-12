@@ -1,0 +1,50 @@
+
+.btn {
+    border: 1px solid $primary-color;
+    border-radius: 25px;
+    color: $primary-color;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+.btn-attention {
+    line-height: 1.5rem;
+    border: none;
+    color: #FFFFFF;
+    background-color: $color-button-attention;
+
+    &:hover {
+        background-color: darken($color-button-attention, 10%)
+    }
+}
+
+.btn-primary {
+    line-height: 26px;
+    border: none;
+    color: #FFFFFF;
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: darken($primary-color, 10%)
+    }
+}
+
+.card {
+    @include shadow;
+    @include border-radius;
+    background-color: #fff;
+}
+
+.card-circle {
+    @include shadow;
+    @include circle;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $color-line-gray;
+}

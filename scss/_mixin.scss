@@ -1,0 +1,22 @@
+@mixin flexbox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin breakpoint($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin shadow {
+    box-shadow: 0px 2px 10px #00000014;
+}
+
+@mixin border-radius {
+    border-radius: 12px;
+}
+
+@mixin circle {
+    border-radius: 50% 50% 50% 50%;
+}

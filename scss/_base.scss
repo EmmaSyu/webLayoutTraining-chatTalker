@@ -1,0 +1,16 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $noto-sans-tc;
+    color: $color-text-black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-color {
+    color: $primary-color;
+}
