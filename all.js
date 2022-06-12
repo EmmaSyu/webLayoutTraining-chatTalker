@@ -25,9 +25,11 @@
 $(document).ready(function(){
 	$('.qa-title').click(function(e){
 	    e.preventDefault();
-	    $(this).find('p').toggleClass('qa-active');
-        $(this).siblings('p').slideToggle();
-        $(this).find('div img').toggleClass('d-none');
+	    $('.qa-title').find('p').removeClass('qa-active');
+        $(this).find('p').addClass('qa-active');
+
+        $('.qa-title').siblings('p').slideUp();
+        $(this).siblings('p').slideDown();
 	})
 })
 
