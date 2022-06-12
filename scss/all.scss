@@ -209,11 +209,6 @@
     @include breakpoint(992px) {
         width: 100%;
         justify-content: center;
-        gap: 16px;
-    }
-
-    @include breakpoint(992px) {
-        gap: 0px;
     }
 }
 
@@ -226,6 +221,10 @@
 
     @include breakpoint(992px) {
         width: 45%;
+
+        &:nth-child(2n + 1) {
+            margin-right: 16px;
+        }
     }
 
     @include breakpoint(576px) {
@@ -287,8 +286,13 @@
     background-size: 100%;
     background-position: top center;
 
+    @include breakpoint(992px) {
+        background-size: cover;
+    }
+
     @include breakpoint(576px) {
         background-image: url(../images/footer_sm.svg);
+        background-size: 100%;
     }
 }
 

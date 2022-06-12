@@ -309,8 +309,16 @@
         text-align: center;
     }
 
-    .w-md-50 {
+    .w-md-45 {
         width: 45%;
+    }
+    
+    .w-md-50 {
+        width: 50%;
+    }
+    
+    .w-md-60 {
+        width: 60%;
     }
 
     .flex-md-wrap {
@@ -319,10 +327,6 @@
 
     .d-md-none {
         display: none;
-    }
-    
-    .w-md-50 {
-        width: 50%;
     }
 
     .overflow-md-auto {
