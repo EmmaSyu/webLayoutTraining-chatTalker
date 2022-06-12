@@ -35,12 +35,12 @@
             <main class="main-content charge-container main-bg">
                 <section class="section-content">
                     <h2 class="section-title text-center fs-9 mb-8 fs-sm-7 mb-sm-4">彈性選擇，提供您選擇最適合的方案</h2>
-                    <ul class="d-flex justify-content-center overflow-md-auto justify-content-md-start gap-3 gap-sm-1">
-                        <li><button  class="btn btn-primary d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3">10000位</button></li>
-                        <li><button  class="btn d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3">15000位</button></li>
-                        <li><button  class="btn d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3">20000位</button></li>
-                        <li><button  class="btn d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3">25000位</button></li>
-                        <li><button  class="btn d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3">>25000位</button></li>
+                    <ul class="charge-plan d-flex justify-content-center overflow-md-auto justify-content-md-start gap-3 gap-sm-1">
+                        <li><button  class="btn btn-primary d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3"><span>10000</span>位</button></li>
+                        <li><button  class="btn d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3"><span>15000</span>位</button></li>
+                        <li><button  class="btn d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3"><span>20000</span>位</button></li>
+                        <li><button  class="btn d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3"><span>25000</span>位</button></li>
+                        <li><button  class="btn d-block py-6 px-7 fs-4 btn-sm fs-sm-3 py-sm-2 px-sm-3"><span>>25000</span>位</button></li>
                     </ul>
                     <!-- 方案內容 -->
                     <div class="plan-contant d-flex justify-content-center flex-md-wrap">
@@ -55,7 +55,7 @@
                                 <p class="fs-8 equal-text d-flex align-items-center">=</p>
                                 <div class="bg-gray flex-column justify-content-center align-items-center gap-2 py-4">
                                     <p class="num-text fs-1">試算每月的費用</p>
-                                    <p class="num-text fs-1 fw-bold"><span class="num-sub fs-9 me-2 fw-normal">600</span>TWD</p>
+                                    <p class="num-text fs-1 fw-bold"><span class="num-sub fs-9 me-2 fw-normal" id="basic-price">600</span>TWD</p>
                                 </div>
                             </div>
                             <ul class="plan-check flex-column gap-3 mx-9 mx-md-3">
@@ -79,7 +79,7 @@
                                 <p class="fs-8 equal-text d-flex align-items-center">=</p>
                                 <div class="bg-gray flex-column justify-content-center align-items-center gap-2 py-4">
                                     <p class="num-text fs-1">試算每月的費用</p>
-                                    <p class="num-text fs-1 fw-bold"><span class="num-sub fs-9 me-2 fw-normal">1600</span>TWD</p>
+                                    <p class="num-text fs-1 fw-bold"><span class="num-sub fs-9 me-2 fw-normal" id="standard-price">1600</span>TWD</p>
                                 </div>
                             </div>
                             <ul class="plan-check flex-column gap-3 mx-9 mx-md-3">
@@ -134,7 +134,7 @@
         </div>
         <p class="copyright text-center py-3">© 2022 chatTalker. All Rights Reserved.</p>
     </div>
-    
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./all.js"></script>

@@ -35,7 +35,35 @@ $(document).ready(function(){
 
 
 // 價格方案
+$(document).ready(function(){
+	$('.charge-plan li').click(function(e){
+	    e.preventDefault();
+	    $('.charge-plan li').find('button').removeClass('btn-primary');
+        $(this).find('button').toggleClass('btn-primary');
 
+        // 改變方案文字
+        let numSub = $(this).find('button span').text();
+        // console.log(numSub);
+        $('.num-sub').text(numSub);
+
+        if (numSub == '10000') {
+            $('#basic-price').text('600');
+            $('#standard-price').text('1600');
+        } else if (numSub == '15000') {
+            $('#basic-price').text('500');
+            $('#standard-price').text('1500');
+        } else if (numSub == '20000') {
+            $('#basic-price').text('400');
+            $('#standard-price').text('1400');
+        } else if (numSub == '25000') {
+            $('#basic-price').text('300');
+            $('#standard-price').text('1300');
+        } else if (numSub == '>25000') {
+            $('#basic-price').text('200');
+            $('#standard-price').text('1200');
+        }
+	})
+})
 
 
 
