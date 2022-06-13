@@ -57,17 +57,17 @@ $(document).ready(function(){
             $('#basic-price').text('600');
             $('#standard-price').text('1600');
         } else if (numSub == '15000') {
-            $('#basic-price').text('500');
-            $('#standard-price').text('1500');
+            $('#basic-price').text('700');
+            $('#standard-price').text('1700');
         } else if (numSub == '20000') {
-            $('#basic-price').text('400');
-            $('#standard-price').text('1400');
+            $('#basic-price').text('800');
+            $('#standard-price').text('1800');
         } else if (numSub == '25000') {
-            $('#basic-price').text('300');
-            $('#standard-price').text('1300');
+            $('#basic-price').text('900');
+            $('#standard-price').text('1900');
         } else if (numSub == '>25000') {
-            $('#basic-price').text('200');
-            $('#standard-price').text('1200');
+            $('#basic-price').text('1000');
+            $('#standard-price').text('2000');
         }
 	})
 })

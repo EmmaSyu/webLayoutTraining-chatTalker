@@ -229,6 +229,10 @@
 
     @include breakpoint(576px) {
         width: 230px;
+        
+        &:nth-child(2n + 1) {
+            margin-right: 0px;
+        }
     }
 }
 
